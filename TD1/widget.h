@@ -1,6 +1,7 @@
 #ifndef WIDGET_H
 #define WIDGET_H
 
+#include <QGraphicsItem>
 #include <QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -14,6 +15,9 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+
+private slots:
+    void on_pushButtonDessiner_clicked();
 
 private:
     Ui::Widget *ui;
